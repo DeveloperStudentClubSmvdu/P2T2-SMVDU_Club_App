@@ -14,7 +14,7 @@ lifeblood of campus culture, keeping track of their multifaceted activities can 
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Technology Stack](#technology-stack)
+- [Tech Stacks](#technology-stack)
 - [Usage](#usage)
 - [Contributors](#contributors)
 
