@@ -1,0 +1,45 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table auth_user {
+  entry_number varchar [primary key]
+  email integer
+  name varchar
+  mobile bigint
+  password text 
+}
+
+Table clubs {
+  club_name varchar
+  club_id integer [primary key]
+  img image
+  club_cordinator varchar
+  faculty_cordinator varchar
+  club_description text
+  club_vision text
+}
+
+Table announcements {
+  announcement_id integer [primary key]
+  club_id integer
+  event_id integer
+  title varchar
+  announcement_description text [note: 'Content of the announcement']
+  club_name varchar
+  date_time timestamp
+}
+
+Table events {
+  event_id integer [primary key]
+  title varchar
+  club_id integer
+  event_description text [note: 'Content of the event']
+  event_image image
+  date_time timestamp
+}
+
+Ref: clubs.club_name > announcements.club_name // many-to-one
+
+Ref: events.event_id > announcements.event_id
+
+Ref: clubs.club_id > events.club_id
