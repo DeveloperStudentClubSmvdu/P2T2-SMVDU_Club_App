@@ -4,7 +4,7 @@
 ## Overview
 
 In the vast expanse of Shri Mata Vaishno Devi University (SMVDU), numerous student clubs 
-actively operate, each with its unique purpose, events, and activities. While these clubs are the 
+actively operate, each with its own unique purpose, events, and activities. While these clubs are the 
 lifeblood of campus culture, keeping track of their multifaceted activities can be a daunting task for students.
 
 
@@ -14,14 +14,14 @@ lifeblood of campus culture, keeping track of their multifaceted activities can 
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Tech Stacks](#technology-stack)
-- [Usage](#usage)
-- [Contributors](#contributors)
+- [Tech Stacks](#tech-stacks)
+- [Usages](#usages)
+- [Contributors](#contributers)
 
 ## Introduction
 The overarching goal is to create a one-stop digital platform that strengthens the connection 
 between the student body and clubs, fostering increased participation, collaboration, and a 
-vibrant campus culture. The solution should prioritize user experience, scalability, and real-time data management. We are designing and developing a unified application that brings all SMVDU clubs under a single digital platform.
+vibrant campus culture. The solution should prioritise user experience, scalability, and real-time data management. We are designing and developing a unified application that brings all SMVDU clubs under a single digital platform.
 
 
 
@@ -65,4 +65,6 @@ Kotlin , Android Studio , Jetpack Compose , Firebase.
 
 
 **Mentor** : [Mannat Mahajan]() (20bec038)
+
+<p align="center">(<a href="#smvdu-club-app">Back to top</a>)</p>
 
