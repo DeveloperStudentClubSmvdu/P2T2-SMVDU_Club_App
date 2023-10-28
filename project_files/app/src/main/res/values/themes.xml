@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SMVDUClubApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="Theme.SMVDUClubApp" parent="Base.Theme.SMVDUClubApp">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--        <item name="android:windowActionBarOverlay">true</item>-->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="colorPrimary">@color/theme_color</item>
+    </style>
+
+    <style name="Theme.SMVDUClubApp.Fullscreen" parent="Theme.SMVDUClubApp">
+        <item name="android:actionBarStyle">@style/Widget.Theme.SMVDUClubApp.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.SMVDUClubApp.FullscreenContainer" parent="">
+<!--        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>-->
+<!--        <item name="fullscreenTextColor">@color/light_blue_A200</item>-->
+    </style>
+</resources>
