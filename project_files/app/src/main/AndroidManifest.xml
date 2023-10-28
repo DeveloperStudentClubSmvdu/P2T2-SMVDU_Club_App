@@ -22,7 +22,7 @@
             android:label="@string/title_activity_launcher"
             android:theme="@style/Theme.SMVDUClubApp.Fullscreen">
 
-<!--            This is my repo-->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
