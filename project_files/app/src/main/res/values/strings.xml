@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SMVDU Club App</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="login">LOGIN</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_in_with_your_university_ids">Sign In with your University Ids</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_sign_in">Login / Sign In</string>
+    <string name="smvdu_clubs">SMVDU CLUBS</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="name">Name</string>
+    <string name="login_here">Login Here !</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
