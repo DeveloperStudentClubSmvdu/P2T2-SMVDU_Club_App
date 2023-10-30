@@ -12,6 +12,10 @@
     <string name="name">Name</string>
     <string name="login_here">Login Here !</string>
     <string name="title_activity_launcher">LauncherActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="enter_email_here">enter email here</string>
+    <string name="password_here">password here...</string>
+    <string name="set_a_string_password">set a string password</string>
+    <string name="enter_tour_name">enter tour name...</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="use_your_university_ids">Use your University Ids</string>
 </resources>

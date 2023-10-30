@@ -23,7 +23,6 @@
         app:layout_constraintVertical_bias="0.087" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
@@ -39,28 +38,33 @@
     <EditText
         android:id="@+id/editTextLoginEmail"
         android:layout_width="360dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="52dp"
         android:ems="10"
         android:inputType="text"
+        android:hint="@string/enter_email_here"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/editTextLoginPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints=""
+        tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/editTextLoginPassword"
         android:layout_width="360dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="328dp"
         android:ems="10"
-        android:textColor="@color/black"
+        android:hint="@string/password_here"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/buttonLogin"
@@ -76,7 +80,8 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextLoginPassword"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/buttonRegister"
@@ -90,10 +95,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        tools:ignore="VisualLintButtonSize" />
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/don_t_have_an_account"
@@ -119,16 +124,16 @@
         app:layout_constraintVertical_bias="0.044" />
 
     <TextView
-        android:id="@+id/textView5"
         android:layout_width="77dp"
         android:layout_height="26dp"
         android:text="@string/email"
-        android:textSize="15sp"
         android:textColor="@color/black"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextLoginEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.932" />
+        app:layout_constraintVertical_bias="0.932"
+        tools:ignore="TextSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
