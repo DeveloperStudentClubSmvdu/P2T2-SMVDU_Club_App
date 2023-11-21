@@ -55,26 +55,26 @@
         android:id="@+id/editTextLoginPassword"
         android:layout_width="360dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="328dp"
+        android:layout_marginBottom="360dp"
         android:ems="10"
         android:hint="@string/password_here"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="330dp"
         android:layout_height="55dp"
         android:layout_marginTop="36dp"
-        android:text="@string/login"
         android:background="@drawable/roundstyle"
-        android:textStyle="bold"
+        android:text="@string/login"
         android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -87,11 +87,11 @@
         android:id="@+id/buttonRegister"
         android:layout_width="330dp"
         android:layout_height="55dp"
-        android:layout_marginTop="96dp"
-        android:text="@string/create_account"
+        android:layout_marginTop="64dp"
         android:background="@drawable/roundstyle"
-        android:textStyle="bold"
+        android:text="@string/create_account"
         android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,15 +99,17 @@
         tools:ignore="VisualLintButtonSize" />
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/don_t_have_an_account"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
-        app:layout_constraintVertical_bias="0.854" />
+        app:layout_constraintVertical_bias="0.84" />
 
     <TextView
         android:id="@+id/textView4"
@@ -136,4 +138,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.932"
         tools:ignore="TextSizeCheck" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googlebtn"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonRegister"
+        app:layout_constraintVertical_bias="0.774" />
 </androidx.constraintlayout.widget.ConstraintLayout>

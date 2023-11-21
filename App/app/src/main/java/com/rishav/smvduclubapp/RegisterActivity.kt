@@ -17,17 +17,17 @@ class RegisterActivity : AppCompatActivity() {
 
         supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-
-//        val textViewLoginHere = findViewById<TextView>(R.id.textViewLoginHere)
         binding.textViewLoginHere.setOnClickListener{
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         binding.buttonRegister.setOnClickListener {
             val name = binding.editTextUsername.text.toString()
             val email = binding.editTextEmail.text.toString()
             val password = binding.editTextPassword.text.toString()
+
             if (email.isNotEmpty() && name.isNotEmpty() && password.isNotEmpty()){
                 MainActivity.auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener{
                     if (it.isSuccessful){
@@ -39,6 +39,7 @@ class RegisterActivity : AppCompatActivity() {
                 }
             }
         }
+
 
     }
 }

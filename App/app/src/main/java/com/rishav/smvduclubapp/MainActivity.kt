@@ -16,9 +16,30 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         auth = FirebaseAuth.getInstance()
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //signOut button onclick
+//        binding.signOut.setOnClickListner{
+//            auth.signOut()
+//            binding.userDetails.text =updateData()
+//            startActivity(Intent(this,LoginActivity::class.java))
+//
+//        }
+
     }
+
+
+    override fun onResume() {
+        super.onResume()
+        binding.userDetails.text =updateData()
+    }
+    private fun updateData():String{
+        return "Email: ${auth.currentUser?.email}"
+    }
+
+
 }

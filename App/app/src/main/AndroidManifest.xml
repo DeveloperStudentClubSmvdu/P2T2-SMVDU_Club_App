@@ -16,13 +16,15 @@
         android:windowFullscreen="true"
         tools:targetApi="31">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+        <activity
             android:name=".LauncherActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:label="@string/title_activity_launcher"
+            android:label="@string/app_name"
             android:theme="@style/Theme.SMVDUClubApp.Fullscreen">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,13 +45,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>
