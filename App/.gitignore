@@ -14,4 +14,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+<<<<<<< HEAD
 app/google-services.json
+=======
+app/google-services.json
+>>>>>>> 6f0fb11b3787ee584aacfbbb48c3fb16cde5c849
