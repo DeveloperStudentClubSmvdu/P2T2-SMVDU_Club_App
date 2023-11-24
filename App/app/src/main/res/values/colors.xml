@@ -5,4 +5,5 @@
     <color name="gradient">#371B1B</color>
     <color name="theme_color">#2514E4</color>
     <color name="black_overlay">#66000000</color>
+    <color name="hintColor">#2F000000</color>
 </resources>

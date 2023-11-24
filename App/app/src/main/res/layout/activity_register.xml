@@ -56,33 +56,17 @@
 
 
     <EditText
-        android:layout_width="360dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="52dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/enter_email_here"
-        android:inputType="text"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="VisualLintOverlap,DuplicateClickableBoundsCheck" />
-
-
-    <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="360dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="52dp"
-        android:autofillHints=""
+        android:layout_marginBottom="56dp"
+        android:hint="@string/enter_email_here"
         android:ems="10"
         android:inputType="text"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextFields,SpeakableTextPresentCheck" />
 
@@ -132,30 +116,31 @@
         android:id="@+id/editTextPassword"
         android:layout_width="360dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginBottom="80dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/enter_password"
         android:inputType="textPassword"
-        android:hint="@string/set_a_string_password"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="330dp"
         android:layout_height="55dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginBottom="116dp"
-        android:text="@string/sign_up"
+        android:layout_marginBottom="76dp"
         android:background="@drawable/roundstyle"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="VisualLintButtonSize" />
 
@@ -170,5 +155,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
         app:layout_constraintVertical_bias="0.391" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextReenterPassword"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:hint="@string/re_enter_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

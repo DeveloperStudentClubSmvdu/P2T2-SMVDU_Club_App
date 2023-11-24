@@ -14,38 +14,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SMVDUClubApp"
         android:windowFullscreen="true"
-        tools:targetApi="31">
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            android:label="@string/title_activity_home" />
+        tools:targetApi="33">
+
         <activity
             android:name=".LauncherActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.SMVDUClubApp.Fullscreen">
+            android:theme="@style/Theme.SMVDUClubApp.Fullscreen"
+            tools:ignore="RedundantLabel">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".RegisterActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

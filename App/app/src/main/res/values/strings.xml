@@ -25,4 +25,6 @@
     <string name="title_notifications">Notifications</string>
     <string name="textview">TextView</string>
     <string name="dashboard_here">DASHBOARD HERE !</string>
+    <string name="enter_password">enter password</string>
+    <string name="re_enter_password">re-enter password</string>
 </resources>

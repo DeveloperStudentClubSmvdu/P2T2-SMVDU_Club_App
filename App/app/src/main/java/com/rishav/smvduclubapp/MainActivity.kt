@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        binding.userDetails.text =updateData()
+//        binding.userDetails.text =updateData()
     }
     private fun updateData():String{
         return "Email: ${auth.currentUser?.email}"
