@@ -27,4 +27,6 @@
     <string name="dashboard_here">DASHBOARD HERE !</string>
     <string name="enter_password">enter password</string>
     <string name="re_enter_password">re-enter password</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="logout">LogOut</string>
 </resources>
