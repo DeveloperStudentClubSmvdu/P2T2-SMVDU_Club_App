@@ -44,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Set the enter transition animation.
-        window.enterTransition = android.transition.Slide()
+//        window.enterTransition = android.transition.Slide()
 
         supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 

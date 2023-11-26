@@ -29,6 +29,7 @@
         android:layout_width="77dp"
         android:layout_height="26dp"
         android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins"
         android:text="@string/name"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -45,17 +46,16 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:fontFamily="@font/abeezee"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/poppins_semibold"
         android:text="@string/create_an_account"
-        android:textColor="@color/black"
+        android:textColor="@color/theme_color"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -77,12 +77,13 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
         android:text="@string/use_your_university_ids"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -92,6 +93,7 @@
         android:text="@string/email"
         android:textColor="@color/black"
         android:textSize="15sp"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
@@ -107,6 +109,7 @@
         android:text="@string/password"
         android:textColor="@color/black"
         android:textSize="15sp"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
@@ -135,15 +138,16 @@
         android:id="@+id/buttonRegister"
         android:layout_width="330dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginTop="608dp"
         android:background="@drawable/roundstyle"
+        android:fontFamily="@font/poppins"
         android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="VisualLintButtonSize" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -164,6 +168,7 @@
         android:id="@+id/textViewLoginHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
         android:text="@string/login_here"
         android:textColor="@color/theme_color"
         android:textSize="16sp"
@@ -172,6 +177,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.528" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

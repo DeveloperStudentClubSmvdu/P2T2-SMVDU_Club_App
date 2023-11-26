@@ -9,7 +9,9 @@ import com.rishav.smvduclubapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private val binding: ActivityMainBinding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
 
     companion object{
         lateinit var auth: FirebaseAuth
@@ -20,42 +22,22 @@ class MainActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 //        val currentUser: FirebaseUser? = auth.currentUser
+//        val currentUser = auth.currentUser
+//        val userEmail = currentUser?.email
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(binding.root)
 
-        //signOut button onclick
-//        binding.signOut.setOnClickListner{
-//            auth.signOut()
-//            binding.userDetails.text =updateData()
-//            startActivity(Intent(this,LoginActivity::class.java))
-//
-//        }
+
+        binding.tvClubs.setOnClickListener{
+            startActivity(Intent(this,ClubDirectoryActivity::class.java))
+        }
 
         binding.buttonLogOut.setOnClickListener {
             auth.signOut()
             startActivity(Intent(this,LoginActivity::class.java))
             finish()
 
-//            addOnCompleteListener { task ->
-//                if (task.isSuccessful) {
-//                    // Update UI with signed-out state
-////                    binding.userDetails.text = ""
-//                    Toast.makeText(this, "Logged Out Successfully!", Toast.LENGTH_SHORT).show()
-//                } else {
-//                    Toast.makeText(this, "Logout failed. Please try again.", Toast.LENGTH_SHORT).show()
-//                }
             }
         }
-    }
-
-
-//    override fun onResume() {
-//        super.onResume()
-////        binding.userDetails.text =updateData()
-//    }
-//    private fun updateData():String{
-//        return "Email: ${auth.currentUser?.email}"
-//    }
-
-//}
+}

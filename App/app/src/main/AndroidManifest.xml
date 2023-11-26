@@ -15,7 +15,12 @@
         android:theme="@style/Theme.SMVDUClubApp"
         android:windowFullscreen="true"
         tools:targetApi="33">
-
+        <activity
+            android:name=".EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClubDirectoryActivity"
+            android:exported="false" />
         <activity
             android:name=".LauncherActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -29,19 +34,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".RegisterActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".MainActivity"
             android:exported="false"

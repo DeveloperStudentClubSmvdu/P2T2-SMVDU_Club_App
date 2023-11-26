@@ -29,4 +29,11 @@
     <string name="re_enter_password">re-enter password</string>
     <string name="forget_password">Forget Password ?</string>
     <string name="logout">LogOut</string>
+    <string name="clubs">Clubs</string>
+    <string name="events">Events</string>
+    <string name="notifications">Notifications</string>
+    <string name="about">About</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="clubs_directory">Clubs</string>
+    <string name="clubname_here">clubname here</string>
 </resources>
