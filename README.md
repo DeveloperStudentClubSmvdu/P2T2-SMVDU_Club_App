@@ -59,7 +59,7 @@ Kotlin , Android Studio , Jetpack Compose , Firebase.
 **For Club members** : club members and administrators can circulate and update their club profile from here.
 
 ## Contributers
-- [Sir Rishav](https://github.com/rishav2404)  (21bec127)
+- [Rishav](https://github.com/rishav2404)  (21bec127)
 - [Nikhil Bansal](https://github.com/nikban1711) (23bcs056)
 - [Akash Kr. Chaurasiya]()  (23bcs056)
 
